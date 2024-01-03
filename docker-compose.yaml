@@ -112,14 +112,14 @@ services:
     container_name: productservice_cicd
     ports:
       - "8183:8183"
-    environment:
-      SPRING_APPLICATION_JSON: '{"eureka":
-                                      {"client":
-                                        {"serviceUrl":
-                                            {"defaultZone":"http://serviceDiscovery:8761/eureka"}
-                                        }
-                                      }
-                                  }'
+    # environment:
+    #   SPRING_APPLICATION_JSON: '{"eureka":
+    #                                   {"client":
+    #                                     {"serviceUrl":
+    #                                         {"defaultZone":"http://serviceDiscovery:8761/eureka"}
+    #                                     }
+    #                                   }
+    #                               }'
     links:
       - db
       # - serviceDiscovery
