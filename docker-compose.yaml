@@ -109,9 +109,9 @@ services:
   ProductService:
     image: 'product-service-ci-cd'
     # build: .
-    container_name: productservice_c
+    container_name: productservice_cicd
     ports:
-      - "8083:8083"
+      - "8183:8183"
     environment:
       SPRING_APPLICATION_JSON: '{"eureka":
                                       {"client":
